@@ -47,8 +47,6 @@ function createCatalogue(cataloge){
 
     const catalogueList = document.createElement('div')
     catalogueList.classList.add('cardList')
-
-    console.log(list)
     catalogue.append(catalogueName, catalogueList)
     main.append(catalogue)
     return catalogueList
