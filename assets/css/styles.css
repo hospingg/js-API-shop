@@ -125,10 +125,11 @@ header{
 }
 .item-rate{
     font-size: 0.8em;
-    text-align: left;
+    color: #ffe65b;
 }
 .rate-conainer{
     display: flex;
     gap: 0 10px;
     margin-top: auto;
+    align-items: center;
 }

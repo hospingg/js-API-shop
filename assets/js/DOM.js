@@ -94,7 +94,6 @@ function renderRate(item){
     const rate = document.createElement('p')
     const star = document.createElement('i')
     star.classList.add('fa-solid', 'fa-star', 'item-rate')
-    star.style.color = 'FFG43B;'
     rate.textContent = item.rating.rate
     const rateConainer = document.createElement('div')
     rateConainer.classList.add('rate-conainer')
