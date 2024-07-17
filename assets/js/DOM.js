@@ -60,8 +60,9 @@ function createCard(item){
     const description = renderDecs(item)
     const price = renderPrice(item)
     const textContainer = document.createElement('div')
+    const rating = renderRate(item)
     textContainer.classList.add('text-container')
-    textContainer.append( itemName, description, price)
+    textContainer.append( itemName, description, rating, price)
     card.append(itemImg, textContainer)
     return card
 }
@@ -88,6 +89,17 @@ function renderPrice(item){
     price.classList.add('item-price')
     price.textContent = `${item.price}$`
     return price
+}
+function renderRate(item){
+    const rate = document.createElement('p')
+    const star = document.createElement('i')
+    star.classList.add('fa-solid', 'fa-star', 'item-rate')
+    star.style.color = 'FFG43B;'
+    rate.textContent = item.rating.rate
+    const rateConainer = document.createElement('div')
+    rateConainer.classList.add('rate-conainer')
+    rateConainer.append(star, rate)
+    return rateConainer
 }
 
 

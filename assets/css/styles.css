@@ -15,6 +15,9 @@ body{
     margin: 0;
     min-height: 1000px;
 }
+p{
+    margin: 0;
+}
 h1{
     margin: 0;
 }
@@ -107,7 +110,7 @@ header{
 }
 .text-container{
     margin-top: auto;
-    height: 200px;
+    height: 225px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,4 +122,13 @@ header{
 .item-price{
     text-align: right;
     margin-top: 0.5em;
+}
+.item-rate{
+    font-size: 0.8em;
+    text-align: left;
+}
+.rate-conainer{
+    display: flex;
+    gap: 0 10px;
+    margin-top: auto;
 }
